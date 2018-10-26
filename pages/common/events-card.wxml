@@ -1,0 +1,8 @@
+<!-- body数量和输出的排版 -->
+<import src="cardForEvent.wxml"/>
+
+<template name="events-card">
+  <view bindtap='navToArticleeve' data-id="{{_embedded.itemId}}" class="newitem">
+    <template is="cardForEvent" data="{{_embedded}}"/>
+  </view>
+</template>

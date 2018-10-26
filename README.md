@@ -1,1 +1,1 @@
-# UMMarathon
+# umtoday

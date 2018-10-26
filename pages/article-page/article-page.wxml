@@ -1,0 +1,37 @@
+
+<loading hidden="{{!loading}}">加载中...</loading>
+<scroll-view scroll-y="true">
+    <view class="body">
+        <text class="title">{{body.title}}</text>
+        <view class="time">
+                    <!-- 来源时间 -->
+                    <text>{{body.editTime}}</text>
+        </view>
+        <image class='star' catchtap='handleCollection' wx:if='{{!isCollected}}' src='../../other/images/star_blank.png'></image>
+       <image class='star' catchtap='handleCollection' wx:if='{{isCollected}}' src='../../other/images/star_fill.png'></image>
+       
+        <view class="content">
+            <block wx:for="{{wxml}}"  wx:for-index="outIndex"  wx:for-item="outItem" wx:key="obj">
+                <block wx:if="{{outItem.type == 'view'}}">
+                    <block wx:for="{{outItem.child}}" wx:for-index="innerIndex"  wx:for-item="innerItem" wx:key="text">
+                        <block wx:if="{{innerItem.type == 'text' && innerItem.text != ' '}}">
+                            <!-- 内容 -->
+                            <view class="p">
+                                {{innerItem.text}}
+                            </view>
+                        </block>
+                    </block>
+                </block>
+                <block wx:if="{{outItem.type == 'img'}}">
+                    <!-- 图片 -->
+                    <image class="img" src="{{outItem.attr.src}}" mode="widthFix"></image>
+                </block>
+            </block>
+        </view>
+
+        <view class="footer">
+            <!-- 最终来源 -->
+            <text class="disclaimer">{{disclaimer}}</text>
+        </view>
+    </view>
+</scroll-view>

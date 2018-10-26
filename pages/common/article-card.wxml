@@ -1,0 +1,8 @@
+<!-- body数量和输出的排版 -->
+<import src="card.wxml"/>
+
+<template name="article-card">
+  <view bindtap='navToArticle' data-id="{{_embedded.details[1].title}}" class="newitem">
+    <template is="card" data="{{_embedded}}"/>
+  </view>
+</template>

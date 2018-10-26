@@ -1,0 +1,34 @@
+<import src="../common/swiper-card.wxml"/>
+<import src="../common/article-card.wxml"/>
+<import src="../common/picture-card.wxml"/>
+<import src="../common/video-card.wxml"/>
+<import src="../common/topic2-card.wxml"/>
+<import src="../common/doclive-card.wxml"/>
+<import src="../common/totop.wxml"/>
+<import src="../common/events-card.wxml"/>
+
+<loading hidden="{{!loading}}">加载中...</loading>
+<!-- 快速到顶部 -->
+<template is="toTop"  data="{{showGoTop}}"/>
+
+<view class="container" bindtouchmove="scroll">
+
+<!-- 新闻列表部分 -->
+<view class="news">
+  <block wx:for="{{news._embedded}}" wx:for-item="_embedded" wx:key="news">
+    
+    
+    <template is="article-card" data="{{_embedded}}" />
+    
+   
+  </block>
+  <block wx:for="{{events._embedded}}" wx:for-item="_embedded" wx:key="events">
+    
+    
+    <template is="events-card" data="{{_embedded}}" />
+    
+  
+  </block>
+</view>
+
+</view>

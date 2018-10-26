@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/main-page/main-page",
+    "pages/article-page/article-page",
+    "pages/collection-page/collection-page",
+    "pages/events-page/events-page",
+    "pages/eventsArticle/eventsArticle",
+    "pages/index/index",
+    "pages/logs/logs" 
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#75CEF8",
+    "navigationBarTitleText": "UM Today",
+    "navigationStyle": "default",
+    "navigationBarTextStyle":"#000",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+    
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "other/images/xinwen_blue.png",
+        "iconPath": "other/images/xinwen_black.png",
+        "pagePath": "pages/main-page/main-page"
+      },
+      {
+        "selectedIconPath": "other/images/huodong_blue.png",
+        "iconPath": "other/images/huodong_black.png",
+        "pagePath": "pages/events-page/events-page"
+      },
+      {
+        "selectedIconPath": "other/images/shoucang_blue.png",
+        "iconPath": "other/images/shoucang_black.png",
+        "pagePath": "pages/collection-page/collection-page"
+      }
+    ]
+  }
+}
