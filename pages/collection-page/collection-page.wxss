@@ -68,3 +68,10 @@
   margin-right: 20rpx;
   opacity: .8;  
 }
+
+.flag {
+  padding: 30% 10% 10% 40%;
+  height: 150rpx;
+  width: 150rpx;
+  object-fit: cover;
+}

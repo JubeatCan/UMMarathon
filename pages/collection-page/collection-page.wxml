@@ -1,9 +1,9 @@
 <import src="../common/swiper-card.wxml"/>
 <import src="../common/article-card.wxml"/>
-<import src="../common/picture-card.wxml"/>
-<import src="../common/video-card.wxml"/>
-<import src="../common/topic2-card.wxml"/>
-<import src="../common/doclive-card.wxml"/>
+<!-- <import src="../common/picture-card.wxml"/> -->
+<!-- <import src="../common/video-card.wxml"/> -->
+<!-- <import src="../common/topic2-card.wxml"/> -->
+<!-- <import src="../common/doclive-card.wxml"/> -->
 <import src="../common/totop.wxml"/>
 <import src="../common/events-card.wxml"/>
 
@@ -14,6 +14,7 @@
 <view class="container" bindtouchmove="scroll">
 
 <!-- 新闻列表部分 -->
+<image class="flag" wx:if="{{!flag}}" src="../../other/images/blank.png" mode="aspectFill"></image> 
 <view class="news">
   <block wx:for="{{news._embedded}}" wx:for-item="_embedded" wx:key="news">
     

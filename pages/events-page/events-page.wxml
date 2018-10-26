@@ -1,9 +1,9 @@
 <import src="../common/eventsSwiperCard.wxml"/>
 <import src="../common/events-card.wxml"/>
-<import src="../common/picture-card.wxml"/>
-<import src="../common/video-card.wxml"/>
-<import src="../common/topic2-card.wxml"/>
-<import src="../common/doclive-card.wxml"/>
+<!-- <import src="../common/picture-card.wxml"/> -->
+<!-- <import src="../common/video-card.wxml"/> -->
+<!-- <import src="../common/topic2-card.wxml"/> -->
+<!-- <import src="../common/doclive-card.wxml"/> -->
 <import src="../common/totop.wxml"/>
 
 <loading hidden="{{!loading}}">加载中...</loading>

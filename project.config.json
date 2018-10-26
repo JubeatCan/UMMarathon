@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.3.1",
 	"appid": "wx85f6a9aba196eab5",
-	"projectname": "sport",
+	"projectname": "UMToday",
 	"condition": {
 		"search": {
 			"current": -1,

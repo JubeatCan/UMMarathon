@@ -16,7 +16,8 @@ Page({
     showGoTop: false,
     showSearch: true,
     inputValue: '',
-    nowdate: ''
+    nowdate: '',
+    flag: false
   },
 
   showLoading() {
@@ -41,6 +42,7 @@ Page({
   
 
   initLoad() {
+    this.setData({ flag: false });
     this.showLoading();
     let detailStorage = wx.getStorageSync('isCollected')
     console.log(detailStorage)
@@ -96,6 +98,15 @@ Page({
       
     }
     this.hideLoading();
+
+    for (var key in detailStorage){
+      if(detailStorage[key])
+        this.setData({flag: true});
+    }
+    for (var key in detailStorage2) {
+      if (detailStorage2[key])
+        this.setData({ flag: true });
+    }
   },
   navToArticle(event) {
     console.log(event);
@@ -129,6 +140,7 @@ Page({
    * @return {[type]} [description]
    */
   onShow: function(){
+    this.setData({ flag: false });
     this.showLoading();
     
     this.nowdate = newsdata.NOWDATE;
@@ -197,6 +209,14 @@ Page({
     this.hideLoading();
 
     this.hideLoading();
+    for (var key in detailStorage) {
+      if (detailStorage[key])
+        this.setData({ flag: true });
+    }
+    for (var key in detailStorage2) {
+      if (detailStorage2[key])
+        this.setData({ flag: true });
+    }
   },
   onLoad() {
     this.initLoad();
