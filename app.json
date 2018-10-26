@@ -26,17 +26,20 @@
       {
         "selectedIconPath": "other/images/xinwen_blue.png",
         "iconPath": "other/images/xinwen_black.png",
-        "pagePath": "pages/main-page/main-page"
+        "pagePath": "pages/main-page/main-page",
+        "text": "新聞"
       },
       {
         "selectedIconPath": "other/images/huodong_blue.png",
         "iconPath": "other/images/huodong_black.png",
-        "pagePath": "pages/events-page/events-page"
+        "pagePath": "pages/events-page/events-page",
+        "text": "活動"
       },
       {
         "selectedIconPath": "other/images/shoucang_blue.png",
         "iconPath": "other/images/shoucang_black.png",
-        "pagePath": "pages/collection-page/collection-page"
+        "pagePath": "pages/collection-page/collection-page",
+        "text": "收藏"
       }
     ]
   }

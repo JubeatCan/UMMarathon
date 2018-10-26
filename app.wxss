@@ -204,12 +204,6 @@ page {
   font-size: 40rpx;
 }
 
-.livelist .head .zhibo {
-  
-}
-.livelist .head .tag {
-
-}
 .livetitle {
   font-size: 36rpx;
   letter-spacing: 2rpx;
