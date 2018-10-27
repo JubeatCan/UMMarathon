@@ -15,7 +15,7 @@ Page({
     let is = !this.data.is;
 
     this.setData({
-      // 下面本来是这样子的:is=is,可以简写
+      
       is : is
     })
     //提示用户

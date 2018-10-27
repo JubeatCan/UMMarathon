@@ -8,12 +8,11 @@
     <!-- 简述 -->
     <text class="title">{{_embedded.details[1].locale == "zh_TW" ? _embedded.details[1].title : _embedded.details[2].title}}</text>
     <view class="other clearfloat">
-      <!-- 评论数 -->
+      
        <text class="comment">{{_embedded.common.publishDate[0]+_embedded.common.publishDate[1]+_embedded.common.publishDate[2]+_embedded.common.publishDate[3]+_embedded.common.publishDate[4]+_embedded.common.publishDate[5]+_embedded.common.publishDate[6]+_embedded.common.publishDate[7]+_embedded.common.publishDate[8]+_embedded.common.publishDate[9]}}</text>
-      <!-- 专题标签 -->
+      
       <view class="xinwen">新聞</view>
-      <!--直播标签-->
-      <!-- <view wx:elif="{{item.type == 'sports_live'}}" class="comment" style="color: #de0000;">直播中 </view> -->
+      
     </view>
   </view>
 </template>

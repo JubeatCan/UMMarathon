@@ -36,43 +36,7 @@ Page({
    */
   initLoad() {
     this.showLoading();
-    // newsdata.find('ClientNews', {
-    //         id: 'TY43,FOCUSTY43,TYTOPIC',
-    //         page: 1
-    //     })
-    //     .then(d => {
-
-    //         d.forEach((obj, index) => {
-    //             let validData = obj.item;
-    //             if (!validData)
-    //                 return;
-    //             let typeData = obj.type;
-    //             if (typeData == 'focus') { //首页轮播图
-    //                 this.setData({
-    //                     swiper: obj,
-    //                 });
-    //} else if (typeData == 'secondnav') { //首页专题导航
-    //     this.setData({
-    //         special: obj,
-    //     });
-    // } 
-    /*else if (typeData == 'list') { //首页新闻列表
-        this.setData({
-            news: obj,
-        });
-    }*/
-    //this.hideLoading();
-    //console.log(obj.item);
-    // console.log(index);
-    // })
-    // })
-    // .catch(e => {
-    //     console.error(e)
-    //     this.setData({
-    //         movies: [],
-    //     })
-    //     //this.hideLoading();
-    // })
+    
     this.nowdate = eventsdata.NOWDATE;
     this.nowdate = new Date(this.nowdate.getFullYear() + 0, this.nowdate.getMonth() + 1, this.nowdate.getDay()+2);
     console.log(this.nowdate);
@@ -127,13 +91,7 @@ Page({
       });
 
   },
-  // initLoad2(){
-  //   this.showLoading();
-  //   var now = newsdata.getNowFormatDate(newsdata.NOWDATE);
-  //   var before = newsdata.get2weekbefore(newsdata.NOWDATE);
-  //   newsdata.findUM({date_from: before, date_to: now})
-  //     .then
-  // },
+  
 
   /**
    * [loadMore 加载更多数据]
@@ -143,13 +101,7 @@ Page({
 
     this.showLoading();
 
-    // let currentDate = this.data.news.currentPage;
-    // if (currentPage >= this.data.news.totalPage) {
-    //     this.setData({
-    //         hasMore: false,
-    //     });
-    //     return;
-    // }
+   
     var now = eventsdata.getNowFormatDate(this.nowdate);
     var before = eventsdata.getNowFormatDate(new Date(this.nowdate - 1 * 7 * 24 * 3600 * 1000));
     this.nowdate = new Date(this.nowdate - 1 * 7 * 24 * 3600 * 1000);

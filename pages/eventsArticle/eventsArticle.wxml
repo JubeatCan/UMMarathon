@@ -4,21 +4,6 @@
     <view class="body">
         <text class="title">{{body.title}}</text>
 
-        <!-- <view wx:if="{{body.subscribe}}" class="subscribe">
-            <image wx:if="{{body.subscribe.logo}}" class="logo" src="{{body.subscribe.logo}}" />
-            <view class="info"> -->
-                <!-- 文章来源 -->
-                <!-- <text wx:if="{{body.subscribe.catename}}" class="catename">{{body.subscribe.catename}}</text> -->
-                <!--  | <text wx:if="{{body.subscribe.cateSource}}" class="cateSource">{{body.subscribe.cateSource}}</text> -->
-                <!-- <view class="time"> -->
-                    <!-- 来源时间 -->
-                    <!-- <text>{{body.editTime}}</text> -->
-                <!-- </view> -->
-            <!-- </view>  -->
-            <!-- 订阅标志 -->
-            <!-- <view class="take" bindtap="dingyue">订阅</view> -->
-        <!-- </view>/ -->
-
 
         <view class="time">
                     <!-- 来源时间 -->

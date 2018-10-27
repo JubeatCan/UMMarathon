@@ -12,11 +12,10 @@
       <!-- 评论数 -->
         <!-- <text class="comment">{{_embedded.details[1].locale == "zh_TW" ? _embedded.details[1].venues : _embedded.details[2].venues}}</text>  -->
        <text class="comment">{{_embedded.details[1].dateString ? _embedded.details[1].dateString : (_embedded.common.dateFrom[0] + _embedded.common.dateFrom[1] + _embedded.common.dateFrom[2] + _embedded.common.dateFrom[3] + _embedded.common.dateFrom[4] + _embedded.common.dateFrom[5] + _embedded.common.dateFrom[6] + _embedded.common.dateFrom[7] + _embedded.common.dateFrom[8] + _embedded.common.dateFrom[9])}}</text>
-      <!-- 专题标签 -->
+      
       <view  class="huodong">活動</view>
       <image class="smartPoint"  wx:if="{{_embedded.common.smartPoint}}" src="../../other/images/smartPoint.jpeg"></image>
-      <!--直播标签-->
-      <!-- <view wx:if="{{_embedded.common.smartPoint}}" class="comment" style="color: #de0000;">SP</view> -->
+      
     </view>
   </view>
 </template>
