@@ -133,6 +133,13 @@ page {
   border-radius: 8rpx;
 }
 
+.smartPoint{
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 20rpx;
+}
+
+
 /* =============================================================================== */ 
 
 .videoitem::after, .videoitem::before {
