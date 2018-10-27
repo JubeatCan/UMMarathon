@@ -3,7 +3,9 @@
 <template name="swiper-item">
   <swiper-item>
     <view class="slide-nav" bindtap='navToArticleeve' data-id="{{_embedded.itemId}}">
-    <image src="{{_embedded.common.posterUrl}}" mode="aspectFill"/>
+    <image  wx:if="{{_embedded.common.posterUrl}}" src="{{_embedded.common.posterUrl}}" mode="aspectFill"></image> 
+    <image  wx:else src="../../other/images/None.png" mode="aspectFill"></image>
+    <!-- <image src="{{_embedded.common.posterUrl}}" mode="aspectFill"/> -->
     
     <span class="title">
     <span class="titletext">{{_embedded.details[1].locale == "zh_TW" ? _embedded.details[1].title : _embedded.details[2].title}}

@@ -6,7 +6,8 @@
     "pages/events-page/events-page",
     "pages/eventsArticle/eventsArticle",
     "pages/index/index",
-    "pages/logs/logs" 
+    "pages/logs/logs",
+    "pages/search-page/search-page"
   ],
   "window":{
     "navigationBarBackgroundColor": "#75CEF8",

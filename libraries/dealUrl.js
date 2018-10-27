@@ -8,5 +8,10 @@ module.exports = {
     getUrlEvents(option){
       let url = option.currentTarget.dataset.id;
       return '?item_id='+ url;
-    }
+    },
+  getUrlTitle(option) {
+    let url = option;
+    return '?keyword="' + url + '"';
+  }
+
 }

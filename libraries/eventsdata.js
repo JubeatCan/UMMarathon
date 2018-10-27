@@ -22,7 +22,7 @@ function fetchApiUM(params) {
     wx.request({
       url: `${API_UM}`,
       data: Object.assign({}, params),
-      header: { 'Authorization': 'Bearer fb8cb816-650b-354a-aae5-8f51d50d67a9' },
+      header: { 'Authorization': 'Bearer 5db70af1-3cbe-3200-8a42-8740879d7e71' },
       success: resolve,
       fail: reject
     })
@@ -130,34 +130,4 @@ module.exports = {
     var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate;
     return currentdate;
   }
-}
-
-function getNowFormatDate() {
-  var date = new Date();
-  var seperator1 = "-";
-  var seperator2 = ":";
-  var month = date.getMonth() + 1;
-  var strDate = date.getDate();
-  var strHours = date.getHours();
-  var strMin = date.getMinutes();
-  var strSec = date.getSeconds();
-  if (month >= 1 && month <= 9) {
-    month = "0" + month;
-  }
-  if (strDate >= 0 && strDate <= 9) {
-    strDate = "0" + strDate;
-  }
-  if (strHours >= 0 && strHours <= 9) {
-    strHours = "0" + strHours;
-  }
-  if (strMin >= 0 && strMin <= 9) {
-    strMin = "0" + strMin;
-  }
-  if (strSec >= 0 && strSec <= 9) {
-    strSec = "0" + strSec;
-  }
-  var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
-    + "T" + strHours + seperator2 + strMin
-    + seperator2 + strSec;
-  return currentdate;
 }

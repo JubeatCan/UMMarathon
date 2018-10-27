@@ -153,12 +153,21 @@ Page({
         if(searchValue != '') {
             console.log(this.data.inputValue)
         }
-        wx.showModal({
-            title: '提示',
-            content: `你输入的数据：${this.data.inputValue != '' ? this.data.inputValue : '是空的'} ,但是没用，我没做这个功能。`,
-            success: () => {},
-            fail: () => {}
-        });
+        var str = dealUrl.getUrlTitle(searchValue);
+        console.log(str);
+        wx.navigateTo({
+          url: '../search-page/search-page' + str,
+          success: (res) => { },
+          fail: (err) => {
+          console.log(err)
+        }
+      });
+        // wx.showModal({
+        //     title: '提示',
+        //     content: `你输入的数据：${this.data.inputValue != '' ? this.data.inputValue : '是空的'} ,但是没用，我没做这个功能。`,
+        //     success: () => {},
+        //     fail: () => {}
+        // });
     },
     ensureBtn(event) {//确定按钮事件
         this.bindSearch();

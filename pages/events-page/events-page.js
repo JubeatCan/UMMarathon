@@ -74,9 +74,11 @@ Page({
     //     //this.hideLoading();
     // })
     this.nowdate = eventsdata.NOWDATE;
+    this.nowdate = new Date(this.nowdate.getFullYear() + 0, this.nowdate.getMonth() + 1, this.nowdate.getDay()+2);
+    console.log(this.nowdate);
     var swiNow = eventsdata.getNowFormatDate(this.nowdate);
     console.log(swiNow);
-    this.nowdate = new Date(this.nowdate - 0);
+    this.nowdate = new Date(this.nowdate - 3 * 24 * 3600 * 1000);
     var swiBefore = eventsdata.getNowFormatDate(this.nowdate);
     console.log(swiBefore);
     var now = eventsdata.getNowFormatDate(this.nowdate);
@@ -84,6 +86,7 @@ Page({
     var before = eventsdata.get3daybefore(this.nowdate);
     console.log(before);
     this.nowdate = new Date(this.nowdate - 3 * 24 * 3600 * 1000);
+    console.log(this.nowdate);
 
     eventsdata.findUM({ date_from: swiBefore, date_to: swiNow })
       .then(d => {

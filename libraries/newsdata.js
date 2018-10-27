@@ -22,7 +22,7 @@ function fetchApiUM (params){
     wx.request({
       url: `${API_UM}`,
       data: Object.assign({},params),
-      header: {'Authorization': 'Bearer fb8cb816-650b-354a-aae5-8f51d50d67a9' },
+      header: { 'Authorization': 'Bearer 5db70af1-3cbe-3200-8a42-8740879d7e71' },
       success:resolve,
       fail:reject
     })
