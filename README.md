@@ -16,20 +16,20 @@ Events and News
 
 ### News Page
 
-![News](ImgForREADME/IMG_5029.PNG){height="50%" width="50%"}
+![News](ImgForREADME/IMG_5029.PNG)
 
 ### Activity Page
 
-![Activity](ImgForREADME/IMG_5025.PNG){height="50%" width="50%"}
+![Activity](ImgForREADME/IMG_5025.PNG)
 
 ### Detail Page
 
-![Detail](ImgForREADME/IMG_5026.PNG){height="50%" width="50%"}
+![Detail](ImgForREADME/IMG_5026.PNG)
 
 ### Add to Collection
 
-![add](ImgForREADME/IMG_5027.PNG){height="50%" width="50%"}
-![Del](ImgForREADME/IMG_5028.PNG){height="50%" width="50%"}
+![add](ImgForREADME/IMG_5027.PNG)
+![Del](ImgForREADME/IMG_5028.PNG)
 
 ## Compile and Test
 
