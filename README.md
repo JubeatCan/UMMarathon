@@ -35,3 +35,7 @@ Events and News
 
 請于微信小程序開發工具內打開文件夾，創建測試號進行測試，修改。
 如要真機調試，請刪除 ImgForREADME 文件夾防止超出大小限制。
+
+## Reference
+weParser: https://github.com/petkaantonov/bluebird/
+bluebird: https://github.com/aisin/weParser
